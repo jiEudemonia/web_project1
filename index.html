@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/desktop.css">
+	<link rel="stylesheet" href="css/mobile.css">
+
+	<title>SF vs. Roboto</title>
+
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="row">
+
+			<div class="two columns">
+
+				<img src="images/indicator_sf.png" id="left_arrow" class="indicator2" alt="sf_indicator">
+
+				<div class="sfmenu">
+					<ul style="list-style-type:none">
+						<li> San Francisco </li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="eight columns">
+				<!-- <div id="change_weight"> 
+					<img src="images/indicator.png" class="indicator" alt="ch_indicator">change weight 
+				</div> -->
+			</div>
+
+			<div class="two columns">
+					<img src="images/indicator_ro.png" id="right_arrow" class="indicator2" alt="ro_indicator">
+				<div class="romenu">
+					<ul style="list-style-type:none">
+						<li> Roboto </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!-- <textarea id="showcase_sf" class="showcase_sf" spellcheck="false" autocomplete="off" maxlength="15" autofocus></textarea> -->
+		
+
+		<div class="showcase_sf" > </div>
+		<div class="background">
+		 <!-- put roboto text field here -->
+		 <!-- <div class="showcase_ro" >Put your text here</div> -->
+		 <textarea id="showcase_ro" class="showcase_ro" spellcheck="false" autocomplete="off" maxlength="15" autofocus onkeypress="sounds()"></textarea>
+		</div>
+	</div>
+
+	<!-- <div class="scroll"></div> -->
+</body>
+</html>
