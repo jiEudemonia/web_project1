@@ -48,7 +48,7 @@ $(document).ready(function() {
     	$('.showcase_sf').css({"color": colors[Math.floor(Math.random()*colors.length)]});
 	    $('.showcase_ro').css({"color": colors[Math.floor(Math.random()*colors.length)]});
     });
-    
+
     $("#right_arrow").click(function(){
        if(visted_left%2 == visted_right%2){
        	visted_left = 0;
@@ -72,5 +72,20 @@ $(document).ready(function() {
        		visted_right++;
        }
     });
+
+    
+	
+
+    document.getElementById("showcase_ro").onkeypress=function(){
+    	var audio1 = document.createElement('audio');
+    	audio1.setAttribute('src', 'sounds/'+Math.floor(Math.random()*10)+'.m4a');
+	
+    	audio1.play();
+    	$('#sound1').mouseenter(function(){
+    		audio1.play();
+		});
+    };
+
+
 
 });
