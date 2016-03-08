@@ -1,0 +1,128 @@
+
+
+/* ----------------- Start Grid for mobile screens ----------------- */
+@media (max-width: 960px) and (min-width: 780px) {
+.container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; 
+}
+
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+.showcase_sf {
+  display: none;
+}
+
+.showcase_ro {
+  width: 800px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  margin-left: -400px;
+  margin-top: -60px;
+  top: 50%;
+  text-align: center;
+  font-size: 64pt;
+  z-index: 2;
+  /*border: solid blue 1px;*/
+  
+}
+
+.indicator2 {
+  display: none;
+}
+
+.romenu {
+  display: none;
+}
+
+#change_weight {
+  position: absolute;
+  /*left: 50%;*/
+  top: 60%;
+  left: 45%;
+  /*margin-left: -52px;
+  margin-top: 400px;*/
+  text-align: center;
+  /*border: solid black 2px;*/
+}
+}
+
+@media (max-width: 780px) {
+.container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; 
+}
+
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+.showcase_sf {
+  width: 800px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  margin-left: -400px;
+  margin-top: -60px;
+  top: 50%;
+  text-align: center;
+  font-size: 42pt;
+  z-index: 2;
+  /*border: solid blue 1px;*/
+}
+
+.showcase_ro {
+  display: none;
+}
+
+.indicator2 {
+  display: none;
+}
+
+.romenu {
+  display: none;
+}
+
+#change_weight {
+  position: absolute;
+  /*left: 50%;*/
+  top: 60%;
+  left: 42%;
+  /*margin-left: -52px;
+  margin-top: 400px;*/
+  text-align: center;
+  /*border: solid black 2px;*/
+}
+
+}
+/* ----------------- End Grid for mobile screens ----------------- */
+
+
+
+
+
+
+/* ----------------- Misc Grid Commands ----------------- */
+
+/* Self Clearing Goodness: Fixes Issues with Float: Left; */
+.container:after,
+.row:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both; }
