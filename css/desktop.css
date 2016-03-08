@@ -68,8 +68,6 @@ html,body {
   /*border: solid black 2px;*/
 }
 
-
-
 .indicator {
   width: 30px;
   height: 30px;
@@ -78,6 +76,14 @@ html,body {
   padding: 7px;
   z-index: 2;
   /*border: solid blue 2px;*/
+}
+
+#pop_sf{
+  font-family: sanfrancisco_d_thin;
+}
+
+#pop_ro{
+  font-family: roboto_light;
 }
 
 .one.column {
@@ -109,6 +115,14 @@ html,body {
   z-index: 2;
   font-family: roboto_medium;
   /*border: solid black 2px;*/
+}
+
+.sfmenu:hover {
+  color:#95A5A6;
+}
+
+.romenu:hover {
+  color:#95A5A6;
 }
 
 textarea {
@@ -186,6 +200,7 @@ margin-left: 0; } /* prevents first column from acquiring a gutter on its left: 
   padding: 0px;
 }
 
+/*to hide overflow background*/
 .container {
   overflow: hidden;
 }
@@ -193,6 +208,34 @@ margin-left: 0; } /* prevents first column from acquiring a gutter on its left: 
 #goto_ro{
   display: none;
 }
+
+.popup {
+  width: 800px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -400px;
+  /*border: solid green 2px;*/
+  background: white;
+  opacity: 0.8;
+  z-index: 5;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  display: none;
+}
+
+.pop_text{
+  width: 650px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -210px;
+  margin-left: -325px;
+  /*border: solid red 2px;*/
+}
+
 .showcase_ro {
   width: 800px;
   height: 100px;
@@ -221,17 +264,6 @@ margin-left: 0; } /* prevents first column from acquiring a gutter on its left: 
   z-index: 0;
   overflow: hidden;
   /*border: solid green 2px;*/
-}
-
-#change_weight {
-  position: relative;
-  /*left: 50%;*/
-  top: 60%;
-  /*margin-left: -52px;
-  margin-top: 400px;*/
-  text-align: center;
-  z-index: 2;
-  /*border: solid black 2px;*/
 }
 
 }
