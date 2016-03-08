@@ -190,6 +190,9 @@ margin-left: 0; } /* prevents first column from acquiring a gutter on its left: 
   overflow: hidden;
 }
 
+#goto_ro{
+  display: none;
+}
 .showcase_ro {
   width: 800px;
   height: 100px;
