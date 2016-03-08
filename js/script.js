@@ -32,19 +32,20 @@ $(document).ready(function() {
         	visted_left++;
         }else if(visted_left%2 == 0 && visted_right%2 == 1){
         	$("#right_arrow").fadeIn();
-        	$(".background").css({"display":""});
+        	$(".background").fadeIn();
         	$(".background").animate({
 	          left: '-=50%',
 	          width: '100%'
        		});
         	$(".showcase_ro").css({ "left" : "0%" });
+        	$(".romenu").fadeIn();
         	visted_left++;
         }
         
     });
 
     $('.showcase_ro, .showcase_sf').hover(function(){
-    	var colors = ["#e74c3c", "#3498db","#9b59b6","#16a085","#2c3e50","#f1c40f","#e67e22","#c0392b","#E26A6A","#000000"];
+    	var colors = ["#e74c3c", "#3498db","#9b59b6","#16a085","#2c3e50","#f1c40f","#e67e22","#c0392b","#E26A6A","#000000", "#D3696C"];
     	$('.showcase_sf').css({"color": colors[Math.floor(Math.random()*colors.length)]});
 	    $('.showcase_ro').css({"color": colors[Math.floor(Math.random()*colors.length)]});
     });
@@ -69,21 +70,29 @@ $(document).ready(function() {
 	           left: '+=50%',
 	           width: '50%'
        		});
+       		$(".romenu").css({ "display" : "none" });
        		visted_right++;
        }
     });
 
+    $(".sfmenu").click(function(){
+    	$("#pop_sf").fadeIn();
+    })
+    $(".romenu").click(function(){
+    	$("#pop_ro").fadeIn();
+    })
+
+    $(".popup").click(function(){
+    	$(".popup").fadeOut();
+    });
     
 	
 
     document.getElementById("showcase_ro").onkeypress=function(){
     	var audio1 = document.createElement('audio');
-    	audio1.setAttribute('src', 'sounds/'+Math.floor(Math.random()*10)+'.m4a');
+    	audio1.setAttribute('src', 'sounds/'+Math.floor(Math.random()*10+1)+'.m4a');
 	
     	audio1.play();
-    	$('#sound1').mouseenter(function(){
-    		audio1.play();
-		});
     };
 
 
